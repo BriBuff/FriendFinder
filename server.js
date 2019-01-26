@@ -1,9 +1,9 @@
 // Package
 
-var express = require(express);
+var express = require("express");
 var app = express();
 
-// var path = require("path");
+
 
 // Port
 
@@ -15,8 +15,8 @@ app.use(express.json());
 
 // Routes
 
-require(".app/routing/apiRoutes")(app);
-require(".app/routing/htmlRoutes")(app);
+require("./app/routing/apiRoutes")(app);
+require("./app/routing/htmlRoutes")(app);
 
 
 // Listen
