@@ -9,7 +9,14 @@ module.exports = function(app) {
         res.json(friendsData);
     });
 
-    app.post("/api/friends", function (res, req) {
-        friendsData.push(req.body);
-    });
+app.post("/api/friends", function(req, res) {
+    
+    var newFriend = req.body;
+  
+    console.log(newFriend);
+  
+    friendsArray.push(newFriend);
+  
+    res.json(newFriend);
+  });  
 };
