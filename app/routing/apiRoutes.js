@@ -13,7 +13,7 @@ app.post("/api/friends", function(req, res) {
     
     var newFriend = req.body;
 
-     var score = parseFloat(req.body.scores);
+    //  var score = parseFloat(req.body.scores);
 
     //  console.log(score);
   
@@ -42,7 +42,6 @@ app.post("/api/friends", function(req, res) {
         totalDif = 0;
         // Chooses the best match.
         // if (totalDif >= bestMatch.different) {
-
         // }
 
     }
