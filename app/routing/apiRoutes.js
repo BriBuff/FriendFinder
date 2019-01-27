@@ -13,7 +13,9 @@ app.post("/api/friends", function(req, res) {
     
     var newFriend = req.body;
 
-    var score = parseInt(req.body.scores);
+     var score = parseFloat(req.body.scores);
+
+    //  console.log(score);
   
     console.log(newFriend);
 
@@ -27,7 +29,6 @@ app.post("/api/friends", function(req, res) {
 
     for (var i = 0; i < friendsData.length ;i++) {
         // Convert New Friends to #s
-        // console.log("here", score);
         // friendsData.friendsArray.scores
         var totalDif = 0;
         console.log(friendsData[i].scores);
@@ -39,13 +40,18 @@ app.post("/api/friends", function(req, res) {
 
         console.log("yes", totalDif);
         totalDif = 0;
+        // Chooses the best match.
+        // if (totalDif >= bestMatch.different) {
+
+        // }
 
     }
 
 
+//   Pushes newFriend to the FriendsArray
+
+     friendsArray.push(newFriend);
   
-    // friendsArray.push(newFriend);
-  
-    // res.json(newFriend);
+     res.json(newFriend);
   });  
 };
