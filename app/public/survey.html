@@ -7,13 +7,12 @@
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
-<script
+  <script
   src="https://code.jquery.com/jquery-3.3.1.min.js"
   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
   crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -24,17 +23,17 @@
       <h3>Survey Questions</h3>
       <hr>
       <p><h4>Name (Required)</h4></p>
-      <input id="name" class="form-control" type="text" placeholder="Jane Doe">
+      <input id="name" class="form-control" type="text" placeholder="Jane Doe" required>
       <p><h4>Picture URL (Required)</h4></p>
-      <input id="picture" class="form-control" type="text" placeholder="http://www.images.google.com">
+      <input id="picture" class="form-control" type="text" placeholder="http://www.images.google.com" required>
    
     
     <hr>
 
     <h4>Question 1</h4>
     <h5>You write like you're running out of time.</h5>
-    <select id="q1" class="custom-select mr-sm-2" id="inlineFormCustomSelect">
-          <option selected>Choose...</option>
+    <select id="q1" class="custom-select mr-sm-2" id="inlineFormCustomSelect" required>
+          <option selected value="">Choose...</option>
            <option value="1">1 (Disagree)</option>
             <option value="2">2 </option>
             <option value="3">3 </option>
@@ -47,8 +46,8 @@
 
       <h4>Question 2</h4>
       <h5>You feel like you're never satisfied.</h5>
-      <select id="q2" class="custom-select mr-sm-2" id="inlineFormCustomSelect">
-          <option selected>Choose...</option>
+      <select id="q2" class="custom-select mr-sm-2" id="inlineFormCustomSelect" required>
+          <option selected value="">Choose...</option>
            <option value="1">1 (Disagree)</option>
             <option value="2">2 </option>
             <option value="3">3 </option>
@@ -61,8 +60,8 @@
 
       <h4>Question 3</h4>
       <h5>You believe in: "Talk less, smile more"?</h5>
-      <select id="q3" class="custom-select mr-sm-2" id="inlineFormCustomSelect">
-          <option selected>Choose...</option>
+      <select id="q3" class="custom-select mr-sm-2" id="inlineFormCustomSelect" required>
+          <option selected value="">Choose...</option>
            <option value="1">1 (Disagree)</option>
             <option value="2">2 </option>
             <option value="3">3 </option>
@@ -75,8 +74,8 @@
 
       <h4>Question 4</h4>
       <h5>You want to be in the room where it happens.</h5>
-      <select id="q4" class="custom-select mr-sm-2" id="inlineFormCustomSelect">
-          <option selected>Choose...</option>
+      <select id="q4" class="custom-select mr-sm-2" id="inlineFormCustomSelect" required>
+          <option selected value="">Choose...</option>
            <option value="1">1 (Disagree)</option>
             <option value="2">2 </option>
             <option value="3">3 </option>
@@ -89,8 +88,8 @@
 
         <h4>Question 5</h4>
         <h5>You feel like the villain.</h5>
-        <select id="q5" class="custom-select mr-sm-2" id="inlineFormCustomSelect">
-              <option selected>Choose...</option>
+        <select id="q5" class="custom-select mr-sm-2" id="inlineFormCustomSelect" required>
+            <option selected value="">Choose...</option>
                <option value="1">1 (Disagree)</option>
                 <option value="2">2 </option>
                 <option value="3">3 </option>
@@ -103,8 +102,8 @@
 
         <h4>Question 6</h4>
         <h5>Duels can settle a dispute.</h5>
-        <select id="q6" class="custom-select mr-sm-2" id="inlineFormCustomSelect">
-              <option selected>Choose...</option>
+        <select id="q6" class="custom-select mr-sm-2" id="inlineFormCustomSelect" required>
+            <option selected value="">Choose...</option>
                <option value="1">1 (Disagree)</option>
                 <option value="2">2 </option>
                 <option value="3">3 </option>
@@ -117,8 +116,8 @@
 
           <h4>Question 7</h4>
           <h5>Are you worried about your legacy?</h5>
-          <select id="q7" class="custom-select mr-sm-2" id="inlineFormCustomSelect">
-                <option selected>Choose...</option>
+          <select id="q7" class="custom-select mr-sm-2" id="inlineFormCustomSelect" required>
+              <option selected value="">Choose...</option>
                 <option value="1">1 (Disagree)</option>
                 <option value="2">2 </option>
                 <option value="3">3 </option>
@@ -131,8 +130,8 @@
 
             <h4>Question 8</h4>
             <h5>It is hard to be a leader.</h5>
-            <select id="q8" class="custom-select mr-sm-2" id="inlineFormCustomSelect">
-                  <option selected>Choose...</option>
+            <select id="q8" class="custom-select mr-sm-2" id="inlineFormCustomSelect" required>
+                <option selected value="">Choose...</option>
                    <option value="1">1 (Disagree)</option>
                     <option value="2">2 </option>
                     <option value="3">3 </option>
@@ -145,8 +144,8 @@
 
                 <h4>Question 9</h4>
                 <h5>Breaks are useful.</h5>
-                <select id="q9" class="custom-select mr-sm-2" id="inlineFormCustomSelect">
-                      <option selected>Choose...</option>
+                <select id="q9" class="custom-select mr-sm-2" id="inlineFormCustomSelect" required>
+                    <option selected value="">Choose...</option>
                        <option value="1">1 (Disagree)</option>
                         <option value="2">2 </option>
                         <option value="3">3 </option>
@@ -159,8 +158,8 @@
 
                 <h4>Question 10</h4>
                 <h5>You believe in building a strong country.</h5>
-                <select id="q10" class="custom-select mr-sm-2" id="inlineFormCustomSelect">
-                      <option selected>Choose...</option>
+                <select id="q10" class="custom-select mr-sm-2" id="inlineFormCustomSelect" required>
+                    <option selected value="">Choose...</option>
                        <option value="1">1 (Disagree)</option>
                         <option value="2">2 </option>
                         <option value="3">3 </option>
@@ -173,8 +172,8 @@
 
                 <h4>Question 11</h4>
                 <h5>Do you agree that you're just like your country: "young, scrappy, and hungry and not throwing away your shot"?</h5>
-                <select id="q11" class="custom-select mr-sm-2" id="inlineFormCustomSelect">
-                      <option selected>Choose...</option>
+                <select id="q11" class="custom-select mr-sm-2" id="inlineFormCustomSelect" required>
+                    <option selected value="">Choose...</option>
                        <option value="1">1 (Disagree)</option>
                         <option value="2">2 </option>
                         <option value="3">3 </option>
@@ -195,7 +194,7 @@
       </footer>
 
     <!-- Modal -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="resultsModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
@@ -205,7 +204,8 @@
             </button>
           </div>
           <div class="modal-body">
-            ...
+            <h2 id="matches"></h2>
+            <img id="friendImg"/>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -221,7 +221,7 @@
 <script type="text/javascript">
   $("#form").on("submit", function (event) {
     event.preventDefault();
-
+    console.log("here form")
     
     var valAll = 
     {
@@ -239,16 +239,21 @@
     $("#q9").val(),
     $("#q10").val(),
     $("#q11").val()
-    ]}
+    ]
+  };
     
     $.post("/api/friends", valAll, function (data){
       // Callback- data back for the best match for modal
       // Toggle modal
-      // $("#exampleModal").modal("toggle");
+      console.log("clicked");
+       $("#resultsModal").modal("toggle");
       // Display results
-      // $(.modal-body).text(friendsArray[i]);
+       $("#matches").text(data[0].name);
+      //  $(img).prependTo("#friendImg");
+       $("#friendImg").attr("src", data[0].photo);
+      console.log(data);
+       
     });
-    // Requiring all fields before post
   });
 </script>
 

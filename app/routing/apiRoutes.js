@@ -37,20 +37,20 @@ app.post("/api/friends", function(req, res) {
            totalDif += Math.abs(parseInt(req.body.scores[j]) - friendsData[i].scores[j]);
             
         }
-
-        console.log("yes", totalDif);
-        totalDif = 0;
         // Chooses the best match.
-        // if (totalDif >= bestMatch.different) {
-        // }
+        if (totalDif >= bestMatch[0].different) {   
+            bestMatch[0].name = friendsData[i].name;
+            bestMatch[0].photo = friendsData[i].photo;
+            bestMatch[0].different = totalDif;
+        }
 
     }
 
 
 //   Pushes newFriend to the FriendsArray
 
-     friendsArray.push(newFriend);
+    //  friendsArray.push(newFriend);
   
-     res.json(newFriend);
+     res.json(bestMatch);
   });  
 };
