@@ -12,10 +12,6 @@ module.exports = function(app) {
 app.post("/api/friends", function(req, res) {
     
     var newFriend = req.body;
-
-    //  var score = parseFloat(req.body.scores);
-
-    //  console.log(score);
   
     console.log(newFriend);
 
@@ -28,8 +24,6 @@ app.post("/api/friends", function(req, res) {
     // For loop for friends Array
 
     for (var i = 0; i < friendsData.length ;i++) {
-        // Convert New Friends to #s
-        // friendsData.friendsArray.scores
         var totalDif = 0;
         console.log(friendsData[i].scores);
         for (var j = 0; j < friendsData[i].scores.length; j++) {
@@ -46,10 +40,6 @@ app.post("/api/friends", function(req, res) {
 
     }
 
-
-//   Pushes newFriend to the FriendsArray
-
-    //  friendsArray.push(newFriend);
   
      res.json(bestMatch);
   });  
