@@ -4,7 +4,7 @@ Find your historical best friend! Fill out the quiz and find out which Hamilton 
 
 Possible Friends: Alexander Hamilton, Aaron Burr, Eliza Hamilton, King George, George Washington
 
-    *Additional friends will be added the more people take the quiz!
+    *Additional friends are not added when you take the quiz so you can keep matching with Hamilton profiles.
 
 Front-End Framework: Bootstrap
 
